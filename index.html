@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="BACHAR ALHAMADA ">
-    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap">
-    <link rel="stylesheet" href="./assets/style/reset.css">
-    <link rel="stylesheet" href="./assets/style/index.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script defer src="./assets/script/index.js" type="module"></script>
-    <title>YOUR PAGE TITLE CHANGE IT </title>
-  </head>
-  <body>
-    <div class="main-container">
-        <header>
-          <div class="header-left">
-            <img src="profile-pic.jpg" alt="Profile" class="header-profile-pic">
-            <h1>Post Publisher</h1>
-          </div>
-          <nav class="header-nav">
-            <a href="#">Friends</a>
-            <a href="#">Groups</a>
-            <a href="#">Pages</a>
-          </nav>
-          <div class="header-right">
-            <img src="profile-pic.jpg" alt="Profile" class="header-profile-pic" id="profile-button">
-            <span>My Profile</span>
-          </div>
-        </header>
-      
-        <section id="post-creation">
-          <textarea id="post-text" placeholder="What's on your mind?"></textarea>
-          <label for="post-image" class="image-upload-label">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="BACHAR ALHAMADA">
+  <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="./assets/style/reset.css">
+  <link rel="stylesheet" href="./assets/style/index.css">
+  <script defer src="./assets/script/index.js" type="module"></script>
+  <title>face WEB</title>
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <div class="header-left">
+        <h1>face WEB</h1>
+      </div>
+      <nav class="header-nav">
+        <a href="#">Friends</a>
+        <a href="#">Groups</a>
+        <a href="#">Pages</a>
+      </nav>
+      <div class="header-right">
+        <img src="./assets/img/th (1).jfif" alt="Profile" class="header-profile-pic" id="profile-button">
+        <span>My Profile</span>
+      </div>
+    </header>
+
+    <section id="post-creation">
+        <textarea id="post-text" placeholder="What's on your mind?"></textarea>
+        <label for="post-image" class="image-upload-label">
             <i class="fas fa-image"></i> Upload Picture
-          </label>
-          <input type="file" id="post-image" accept="image/*" style="display:none;">
-          <button id="post-button">Post</button>
-        </section>
-      
-        <section id="posts-container">
-          <!-- Posts will be displayed here -->
-        </section>
-      </div>
-      
-      <div id="user-modal" class="modal">
-        <div class="modal-content">
-          <!-- User info will be displayed in this modal -->
-          <img src="profile-pic.jpg" alt="Profile" class="modal-profile-pic">
-          <p>Name: [Username]</p>
-          <p>Email: user@example.com</p>
-          <p>Joined: January 2021</p>
-          <button onclick="closeModal()">Close</button>
-        </div>
-      </div>
+        </label>
+        <span id="image-name" class="image-name"></span>
+        <input type="file" id="post-image" accept="image/*" style="display:none;" onchange="showImageName()">
+        <button id="post-button">Post</button>
+        <div id="feedback" class="feedback"></div> <!-- Feedback moved here -->
+    </section>
+    
+
+    <section id="posts-container">
+    
+    </section>
+  </div>
+
+  <div id="user-modal" class="modal">
+    <div class="modal-content">
+      <img src="./assets/img/th (1).jfif" alt="Profile" class="modal-profile-pic">
+      <p>Name: bachar</p>
+      <p>Email: bachar@gmail.com</p>
+      <p>Joined: January 2021</p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
 </body>
 </html>
