@@ -5,7 +5,6 @@
     box-sizing: border-box;
   }
   
-  /* Body and Main Container Styling */
   body, html {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
@@ -71,7 +70,7 @@
   #post-creation {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Align items horizontally */
+    justify-content: space-between; 
   }
   
   #post-text {
@@ -80,8 +79,8 @@
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    height: 100px; /* Fixed height for the textarea */
-    resize: none; /* Disables resizing of the textarea */
+    height: 100px; 
+    resize: none; 
   }
   
   .image-upload-label {
@@ -115,10 +114,10 @@
   .image-name {
     font-size: 0.9em;
     color: #666;
-    margin-left: 10px; /* Space after the upload label */
+    margin-left: 10px; 
   }
   
-  /* Posts Container Styling */
+
   #posts-container {
     margin-bottom: 20px;
   }
@@ -132,9 +131,9 @@
   }
   
   .post img {
-    width: 100%; /* Full width of the container */
+    width: 100%;
     height: auto;
-    margin-top: 10px; /* Spacing after the text */
+    margin-top: 10px;
   }
   
   /* Modal Styling */
@@ -192,7 +191,7 @@
       font-size: 1em;
     }
   }
-  /* Styles for the post header */
+ 
 .post-header {
     display: flex;
     align-items: center;
@@ -200,19 +199,19 @@
   }
   
   .post-profile-pic {
-    width: 5px; /* Adjust the size as needed */
-    height: 5px; /* Adjust the size as needed */
-    border-radius: 50%; /* Makes the image circular */
-    /* Add any other styling you need */
+    width: 5px; 
+    height: 5px; 
+    border-radius: 50%; 
+    
   }
   .button-feedback-group {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Align items to the start (left) */
+    flex-direction: column;
+    align-items: center;
   }
   
   .image-upload-label, #post-button {
-    margin-bottom: 10px; /* Spacing between buttons and feedback */
+    margin-bottom: 10px;
   }
   
   .feedback {

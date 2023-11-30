@@ -1,8 +1,7 @@
 import Subscriber from './Subscriber.js';
 import { publishPost } from './postPublisher.js';
 
-
-    const subscriber = new Subscriber(1, 'bachar', 'alhamada', 'bachar@example.com', ['Page1', 'Page2'], ['Group1', 'Group2'], true);
+    const subscriber = new Subscriber(1, 'bachar', 'alhaamada', 'bachar@example.com', ['Page1', 'Page2'], ['Group1', 'Group2'], true);
 
     const postButton = document.getElementById('post-button');
     if (postButton) {
@@ -14,22 +13,16 @@ import { publishPost } from './postPublisher.js';
         profileButton.addEventListener('click', displayUserModal);
     }
 
-    const closeModalButton = document.getElementById('close-modal-button');
-    if (closeModalButton) {
-        closeModalButton.addEventListener('click', closeModal);
-    }
-
     const imageInput = document.getElementById('post-image');
     if (imageInput) {
         imageInput.addEventListener('change', showImageName);
     }
 
-
 function displayUserModal() {
     const modal = document.getElementById('user-modal');
     if (modal) {
         modal.style.display = 'block';
-        modal.innerHTML = `<div class="modal-content">${subscriber.getInfo()}<br><button id="close-modal-button">Close</button></div>`;
+        modal.innerHTML = `<div class="modal-content">${subscriber.getInfo()}<br><button onclick="closeModal()">Close</button></div>`;
     }
 }
 
