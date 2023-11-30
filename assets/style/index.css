@@ -85,7 +85,7 @@
   }
   
   .image-upload-label {
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: #5cb85c;
     color: white;
     border: none;
@@ -93,8 +93,10 @@
     cursor: pointer;
     margin-right: 50px;
     margin-left: 70px;
-    padding-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 10px;
+    text-align: center;
 
   }
   
@@ -106,6 +108,9 @@
     border-radius: 4px;
     cursor: pointer;
     margin-left: auto;
+    margin-right: 8px;
+
+
   }
   .image-name {
     font-size: 0.9em;
@@ -194,12 +199,11 @@
     margin-bottom: 10px;
   }
   
-  /* Styles for the profile picture in each post */
   .post-profile-pic {
-    width: 10px; /* Adjust the size as needed */
-    height: 10px; /* Adjust the size as needed */
-    border-radius: 10%;
-    margin-right: 10px; /* Adds space between the picture and the text */
+    width: 5px; /* Adjust the size as needed */
+    height: 5px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    /* Add any other styling you need */
   }
   .button-feedback-group {
     display: flex;

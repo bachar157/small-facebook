@@ -9,8 +9,13 @@ export function publishPost(subscriber) {
         postElement.classList.add('post');
 
         const profilePic = document.createElement('img');
-        profilePic.src = 'path_to_profile_picture.jpg'; // Replace with actual path
-        profilePic.classList.add('post-profile-pic');
+        profilePic.src = "./assets/img/th (1).jfif"; // Ensure this path is correct
+        profilePic.style.width = '50px';
+        profilePic.style.height = '50px';
+        profilePic.style.borderRadius = '50%';
+        profilePic.style.marginRight = '20px'; // Add right margin directly
+
+        
 
         const postHeader = document.createElement('div');
         postHeader.classList.add('post-header');
