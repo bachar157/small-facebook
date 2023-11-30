@@ -12,23 +12,7 @@ This web application allows users to post text messages and photos. Each post di
 - **Responsive Design**: Ensures a consistent experience across various devices and screen sizes.
 
 ## Technologies Used
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- Font Awesome for icons
+[![HTML Badge](https://img.shields.io/badge/-HTML-E34F26?style=for-the-badge&labelColor=black&logo=html5&logoColor=E34F26)](#)
+[![CSS Badge](https://img.shields.io/badge/-CSS-1572B6?style=for-the-badge&labelColor=black&logo=css3&logoColor=1572B6)](#)
+[![JavaScript Badge](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F7DF1E)](#)
 
-## Setup and Usage
-1. Clone the repository to your local machine.
-2. Open `index.html` in a modern web browser to view and interact with the application.
-3. To post, enter text, upload an image, and click the "Post" button.
-
-## File Structure
-- `index.html`: Main HTML file.
-- `assets/style/index.css`: Contains the styling for the web application.
-- `assets/script/main.js`: JavaScript file handling the application logic.
-- `assets/img/`: Directory containing images used in the application.
-
-## Future Enhancements
-- Implement user authentication.
-- Add backend support for storing posts.
-- Introduce more interactive features like comments and likes.
