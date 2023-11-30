@@ -201,20 +201,30 @@
     border-radius: 10%;
     margin-right: 10px; /* Adds space between the picture and the text */
   }
+  .button-feedback-group {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items to the start (left) */
+  }
+  
+  .image-upload-label, #post-button {
+    margin-bottom: 10px; /* Spacing between buttons and feedback */
+  }
+  
   .feedback {
     margin-top: 10px;
     padding: 5px;
     text-align: center;
     border-radius: 4px;
+    font-size: 0.9em;
   }
   
   .feedback.success {
-    color: #3c763d; /* Green for success */
+    color: #3c763d; /* Green for success messages */
     background-color: #dff0d8;
   }
   
   .feedback.error {
-    color: #a94442; /* Red for error */
+    color: #a94442; /* Red for error messages */
     background-color: #f2dede;
   }
-  

@@ -36,14 +36,17 @@ export function publishPost(subscriber) {
             document.getElementById('post-text').value = '';
             document.getElementById('post-image').value = '';
             feedbackElement.textContent = 'Post published successfully!';
+            feedbackElement.className = 'feedback success';
         };
         reader.onerror = function() {
             feedbackElement.textContent = 'Error in reading the image file.';
+            feedbackElement.className = 'feedback error';
         };
         if (imageFile.type.startsWith('image/')) {
             reader.readAsDataURL(imageFile);
         } else {
             feedbackElement.textContent = 'Please select a valid image file.';
+            feedbackElement.className = 'feedback error';
         }
 
         const deleteIcon = document.createElement('i');
@@ -54,5 +57,6 @@ export function publishPost(subscriber) {
         postElement.appendChild(deleteIcon);
     } else {
         feedbackElement.textContent = 'Please enter text and select an image to post.';
+        feedbackElement.className = 'feedback error';
     }
 }

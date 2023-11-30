@@ -32,21 +32,21 @@
 
     <section id="post-creation">
         <textarea id="post-text" placeholder="What's on your mind?"></textarea>
-        <label for="post-image" class="image-upload-label">
+      
+        <div class="button-feedback-group">
+          <label for="post-image" class="image-upload-label">
             <i class="fas fa-image"></i> Upload Picture
-        </label>
-        <span id="image-name" class="image-name"></span>
-        <input type="file" id="post-image" accept="image/*" style="display:none;" onchange="showImageName()">
-        <button id="post-button">Post</button>
-        <div id="feedback" class="feedback"></div> <!-- Feedback moved here -->
-    </section>
-    
-
+          </label>
+          <span id="image-name" class="image-name"></span>
+          <input type="file" id="post-image" accept="image/*" style="display:none;" onchange="showImageName()">
+          <button id="post-button">Post</button>
+          <div id="feedback" class="feedback"></div> <!-- Feedback positioned here -->
+        </div>
+      </section>
     <section id="posts-container">
     
     </section>
   </div>
-
   <div id="user-modal" class="modal">
     <div class="modal-content">
       <img src="./assets/img/th (1).jfif" alt="Profile" class="modal-profile-pic">
@@ -56,6 +56,5 @@
       <button onclick="closeModal()">Close</button>
     </div>
   </div>
-
 </body>
 </html>

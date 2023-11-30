@@ -1,6 +1,7 @@
 import Subscriber from './Subscriber.js';
 import { publishPost } from './postPublisher.js';
 
+document.addEventListener('DOMContentLoaded', () => {
     const subscriber = new Subscriber(1, 'Jane Doe', 'janedoe', 'jane@example.com', ['Page1', 'Page2'], ['Group1', 'Group2'], true);
 
     const postButton = document.getElementById('post-button');
@@ -17,6 +18,7 @@ import { publishPost } from './postPublisher.js';
     if (imageInput) {
         imageInput.addEventListener('change', showImageName);
     }
+});
 
 function displayUserModal() {
     const modal = document.getElementById('user-modal');
