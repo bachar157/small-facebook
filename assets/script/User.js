@@ -1,3 +1,7 @@
+'use stict'
+
+
+
 export default class User {
     #id;
     #name;

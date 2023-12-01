@@ -1,3 +1,6 @@
+'use stict'
+
+
 export function publishPost(subscriber) {
     const text = document.getElementById('post-text').value;
     const imageFile = document.getElementById('post-image').files[0];
@@ -9,11 +12,11 @@ export function publishPost(subscriber) {
         postElement.classList.add('post');
 
         const profilePic = document.createElement('img');
-        profilePic.src = "./assets/img/th (1).jfif"; // Ensure this path is correct
+        profilePic.src = "./assets/img/th (1).jfif"; 
         profilePic.style.width = '50px';
         profilePic.style.height = '50px';
         profilePic.style.borderRadius = '50%';
-        profilePic.style.marginRight = '20px'; // Add right margin directly
+        profilePic.style.marginRight = '20px'; 
 
         
 

@@ -1,3 +1,5 @@
+'use stict'
+
 import Subscriber from './Subscriber.js';
 import { publishPost } from './postPublisher.js';
 

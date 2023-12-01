@@ -223,11 +223,11 @@
   }
   
   .feedback.success {
-    color: #3c763d; /* Green for success messages */
+    color: #3c763d; 
     background-color: #dff0d8;
   }
   
   .feedback.error {
-    color: #a94442; /* Red for error messages */
+    color: #a94442;
     background-color: #f2dede;
   }
